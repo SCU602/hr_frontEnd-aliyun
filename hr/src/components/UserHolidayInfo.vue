@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
   <div>
     <!-- 面包屑 -->
@@ -84,7 +83,7 @@
     <el-dialog
       title="修改请假" :visible.sync="modifyHolidayDialogVisable" width="35%" @close="resetModifyDialog">
       <el-form ref="modifyFormRef" :model="modifyHolidayForm" label-width="110px" :rules="modifyHolidayFormRules">
-       <el-form-item label="请假起止日期" prop="dateRange">
+        <el-form-item label="请假起止日期" prop="dateRange">
           <el-date-picker
             v-model="modifyHolidayForm.dateRange"
             type="daterange"
@@ -338,9 +337,9 @@ export default {
     <el-dialog
       title="修改请假" :visible.sync="modifyHolidayDialogVisable" width="35%" @close="resetModifyDialog">
       <el-form ref="modifyFormRef" :model="modifyHolidayForm" label-width="110px" :rules="modifyHolidayFormRules">
-       <el-form-item label="请假起止日期" prop="dateRange">
+        <el-form-item label="请假起止日期" prop="dateRange">
           <el-date-picker
-            v-model="addHolidayForm.dateRange"
+            v-model="modifyHolidayForm.dateRange"
             type="daterange"
             range-separator="至"
             start-placeholder="开始日期"
@@ -502,4 +501,3 @@ export default {
   margin-top: 10px;
 }
 </style>
->>>>>>> 1c629f66aa92a0a3f2c27e4dddd04bbab20bd734
